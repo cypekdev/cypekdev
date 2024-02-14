@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Cyprian Moj">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/repo-section.css">
+  <title>O mnie</title>
+</head>
+<body>
+
+  <div class="retractable-element" id="contact-info">
+    <a href="#kontakt">Kontakt</a>
+    <img src="./images/email-icon.svg" class="svg" alt="E-mail icon">
+  </div>
+  <div class="retractable-element" id="github-reference">
+    <a href="https://github.com/cypekdev">GitHub</a>
+    <img src="./images/github-icon.svg" class="svg" alt="GitHub icon">
+  </div>
+
+  <section id="self-introduction">
+    <h1>O mnie</h1>
+    
+    <div class="container">
+      <div>
+        <article class="card">
+          <h3>Kim jestem?</h3>
+          <p>
+            Mam na imię Cyprian, jestem młodym programistą. Uczę się w
+            technikum nr. 7 w Zabrzu jako Technik Programista.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Moje umiejętności</h3>
+          <p>
+            Języki <strong>HTML</strong>, <strong>CSS</strong>,
+            <strong>JavaScript</strong>, <strong>PHP</strong> i
+            <strong>SQL</strong> poznałem w szkole.
+          </p>
+          <p>
+            Często wiele umiejętności nabywam ucząc się na własną rękę.
+          </p>
+        </article>
+      </div>
+      <div>
+        <article class="card">
+          <h3>Moje zainteresowania</h3>
+          <p>
+            Programowaniem zacząłem się interesować w 7 klasie Szkoły
+            Podstawowej. Oprócz tego zajmuję się:
+          </p>
+          <ul>
+            <li>
+              administrowaniem 
+              <a href="https://zs10.zabrze.pl" target="_blank">
+                stroną szkoły
+              </a>
+              w zespole
+            </li>
+            <li>fotografią</li>
+            <li>montowanie filmów</li>
+            <li>Grafiką 3D (Blender 3D)</li>
+          </ul>
+          <p>
+            W wolnym czasie lubię:
+          </p>
+          <ul>
+            <li>grać w gry komputerowe</li>
+            <li>słuchać muzyki i podcastów</li>
+          </ul>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="github-repositories">
+
+    <h2>Moje repozytoria</h2>
+
+    <div class="container">
+
+      <noscript>
+        <article class="card">
+          <h3>Błąd!</h3>
+          <p>
+            Repozytoria nie mogą zostać wczytane bez działających skryptów
+            JavaScript.
+          <p>
+        </article>
+      </noscript>
+
+    </div>
+
+
+
+  </section>
+
+  <section id="kontakt">
+
+    <h2>Kontakt</h2>
+
+    <div class="container">
+      <article class="card">
+        <span>Kontaktowy adres E-mail:
+          <a href="mailto:kontakt@cypek.ct8.pl">kontakt@cypek.ct8.pl</a>
+        </span>
+        <span>Nazwa discord: <strong>_cyp3k</strong></span> 
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Copyright© 
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      Cyprian Moj Wszelkie prawa zastrzeżone.
+    </p>
+  </footer>
+
+  <script src="./js/github-api.js"></script>
+</body>
+</html>

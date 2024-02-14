@@ -1,0 +1,92 @@
+* {
+  --language-color-1: #f1e05a;
+  --language-color-2: #e34c26;
+  --language-color-3: #563d7c;
+  --language-color-4: #89e051;
+  --language-color-5: #3572A5;
+  --language-color-6: #da5b0b;
+}
+
+section#github-repositories > div.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+section#github-repositories > div.container > a {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 250px;
+}
+section#github-repositories > div.container.two-column-layout > a {
+  flex-basis: 260px;
+}
+section#github-repositories > div.container div.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+div.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+span.used-languages-graph {
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  height: 10px;
+  overflow: hidden;
+}
+span.used-languages-graph > span {
+  height: 20px;
+}
+
+span.used-languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+span.used-languages-list > span.used-language-element {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+span.used-languages-list > span.used-language-element > span.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+span.used-languages-list >
+  span.used-language-element >
+    span.language-usage-percentage {
+  color: var(--text-color-3);
+}
+
+span.used-languages-graph > span:nth-child(1),
+span.used-languages-list > span.used-language-element:nth-child(1) > span.dot {
+  background-color: var(--language-color-1);
+}
+span.used-languages-graph > span:nth-child(2),
+span.used-languages-list > span.used-language-element:nth-child(2) > span.dot {
+  background-color: var(--language-color-2);
+}
+span.used-languages-graph > span:nth-child(3),
+span.used-languages-list > span.used-language-element:nth-child(3) > span.dot {
+  background-color: var(--language-color-3);
+}
+span.used-languages-graph > span:nth-child(4),
+span.used-languages-list > span.used-language-element:nth-child(4) > span.dot {
+  background-color: var(--language-color-4);
+}
+span.used-languages-graph > span:nth-child(5),
+span.used-languages-list > span.used-language-element:nth-child(5) > span.dot {
+  background-color: var(--language-color-5);
+}
+span.used-languages-graph > span:nth-child(6),
+span.used-languages-list > span.used-language-element:nth-child(6) > span.dot {
+  background-color: var(--language-color-6);
+}
