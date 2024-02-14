@@ -27,12 +27,12 @@ function renderRepos(repos, repos_languages = undefined) {
           <h3>${name}</h3>
           <p>${description}</p>
           <div class="repos-dates">
-            <div class="block">Data utworzenia:
+            <div class="block">Created date:
               <span style="color: var(--text-color-3);">
                 ${created_at_date}
               </span>
             </div>
-            <div class="block">Data aktualizacji:
+            <div class="block">Update date:
               <span style="color: var(--text-color-3);">
                 ${updated_at_date}
               </span>
@@ -133,10 +133,10 @@ fetch(repository_API_URL)
       github_repositories.innerHTML =
       `<a>
         <section class="tile">
-          <h3>Błąd!</h3>
-          <p>Przepraszamy, wystąpił błąd ładowania repozytoriów<p>
+          <h3>Error!</h3>
+          <p>Sorry, an error occurred loading the repositories<p>
         </section>
       </a>`
-      console.error('Wystąpił błąd:', error)
+      console.error('Error occurred:', error)
     })
   )
